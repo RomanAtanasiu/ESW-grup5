@@ -77,9 +77,10 @@ CREATE TABLE IF NOT EXISTS LikeTweet
 INSERT INTO Polis (name)
 VALUES ('Atenas');
 
-INSERT INTO Users (username, password, email, gender, birthday, polis_id)
-Values ('olivia.rodrigo', 'Aaee1122@', 'olivia.rodrigo@example.com', 'female', '2002-02-18', 1),
-       ('gracie.abrams', 'Aaee1122@', 'gracie.abrams@example.com', 'female', '1999-09-07', 1);
+INSERT INTO Users (username, password, email, gender, birthday, polis_id, picture, is_admin)
+Values ('olivia.rodrigo', 'Aaee1122@', 'olivia.rodrigo@example.com', 'female', '2002-02-18', 1, 'mujerAvatar.png', FALSE),
+       ('gracie.abrams', 'Aaee1122@', 'gracie.abrams@example.com', 'female', '1999-09-07', 1, 'mujerAvatar.png', FALSE),
+       ('admin', 'Aa1234567@', 'admin@example.com', 'male', '1999-09-07', 1, 'robotAvatar.png', TRUE);
 
 SELECT *
 FROM Polis;
